@@ -1,7 +1,7 @@
 # 
-# convert ps4 wifi/bt fw file to elf file
+# convert ps4 wifi/bt fw files to elf files
 # supports torus1 and torus2 fw types
-# note:
+# 
 
 import sys
 import struct

@@ -1,4 +1,6 @@
-
+# 
+# IDA script to perform initial setup and unpack of data in ram for torus fws
+# 
 
 import binascii
 
