@@ -89,6 +89,6 @@ Wait a few seconds for it to complete and then you are ready to explore :)
 
 ## History
 
-v1.0
+### v1.0
 - Initial version
 
