@@ -6,6 +6,7 @@ march 2018
 
 
 <br>
+
 ## Overview
 
 The PS4 uses a hardware module codenamed torus for its wifi and bluetooth. Currently there are two different versions of this; the older torus1 and the newer torus2.
@@ -16,6 +17,7 @@ This is not going to lead to some magical hack of the PS4, its just fun to poke 
 
 
 <br>
+
 ## Torus1
 The older torus1 is based around the **Marvell Avastar 88W8797** SoC. It supports up to wifi n. This SoC has a Marvell Feroceon® CPU (ARMv5TE-compliant) inside it. [Check this pdf for more specs](http://www.marvell.com.cn/wireless/assets/marvell_avastar_88w8797.pdf).
 
@@ -23,12 +25,14 @@ The older torus1 is based around the **Marvell Avastar 88W8797** SoC. It support
 
 
 <br>
+
 ## Torus2
 The newer torus2 is based around the **Marvell Avastar 88W8897** SoC. This updated SoC adds wifi ac. It is used in PS4 Pro consoles and probably PS4 slim since I see that PS4 Slim supports wifi ac. [Check this pdf for more specs](http://www.marvell.com/documents/sewwqoviqtewupxpevcs/)
 
 Apparently this SoC also inside the XboxOne :)
 
 <br>
+
 ## Firmware files
 
 The torus firmware files are stored in plaintext in the PS4 flash. You can parse the flash partitions and filesystems to find it stored as the filename "C0020001". Or if you have a flashdump just search for the string "C0020001" in it. The size of the firmware is a 32bit value stored 0xC bytes before the "C0020001" filename. The firmware data will be stored 0x1D0 bytes after the "C0020001" filename. 
@@ -46,6 +50,7 @@ Note that newer firmwares will include both the torus1 and torus2 fws, so there 
 
 
 <br>
+
 ## Reversing the torus FW files
 
 The first step is to convert the firmware file into an elf file by running fw_to_elf.py. This makes it easier to access the firmware contents with various tools that support the common elf file format.
@@ -72,6 +77,7 @@ and then selecting "ida_fw_setup.py".
 Wait a few seconds for it to complete and then you are ready to explore :)
 
 <br>
+
 ## Links
 
 - [Torus 1 info on psdevwiki](http://www.psdevwiki.com/ps4/88W8797)
@@ -80,6 +86,7 @@ Wait a few seconds for it to complete and then you are ready to explore :)
 - [Torus 2 FCC info](https://fccid.io/document.php?id=3029896)
 
 <br>
+
 ## History
 
 v1.0
