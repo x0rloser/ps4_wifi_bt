@@ -60,7 +60,7 @@ or
 	
 	fw_to_elf.py torus2_fw.zip torus2a.elf torus2b.elf
 
-Note that torus2 firmwares internally have 2 sets of data. I am not sure why at this point. So converting torus2 firmwares will resulting in 2 elf files, whereas converting torus1 firmwares will result in 1 elf file.
+Note that torus2 firmwares internally have 2 sets of data. One is the wifi fw and one is the bt fw. So converting torus2 firmwares will resulting in 2 elf files, whereas converting torus1 firmwares will result in 1 elf file.
 
 The next step is to disassemble the elf files using whatever tools you normally use to reverse arm/thumb binaries. If you use IDA v7 then you can use the "ida_fw_setup.py" script I made to perform the data init routines that unpack, copy and clears data in various ram locations. This is quite important for torus1 fws to unpack packed data, however for torus2 fws it seems to just zero out certain ram areas, probably bss areas.
 
