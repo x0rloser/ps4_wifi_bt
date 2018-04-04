@@ -84,6 +84,8 @@ Wait a few seconds for it to complete and then you are ready to explore :)
 - [Torus 1 Product Brief](http://www.marvell.com.cn/wireless/assets/marvell_avastar_88w8797.pdf)
 - [Torus 2 Product Brief](http://www.marvell.com/documents/sewwqoviqtewupxpevcs/)
 - [Torus 2 FCC info](https://fccid.io/document.php?id=3029896)
+- [Torus interface driver source code](https://github.com/LairdCP/lrdmwl)
+- [Torus firmware images non-ps4 (Torus2=88W8897.bin)](https://github.com/LairdCP/lrdmwl/tree/master/bin/firmware)
 
 <br>
 

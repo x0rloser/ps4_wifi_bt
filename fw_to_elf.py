@@ -125,6 +125,7 @@ def main(argv):
 			last_load_size = load_size
 			fw_off += 0x10 + last_load_size
 		elif type==6:
+			# 6 = end of bluetooth image / start of wifi image
 			# entry that is just a header - has size and address of 0
 			# this seems to "split" the fw into 2 parts (but why?)
 			print "split at idx %d offset 0x%X" % (len(sections), fw_off)
